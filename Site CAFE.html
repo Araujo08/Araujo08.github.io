@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria C & F</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: inherit, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    header {
+      background-color:brown;
+      color:#000000;
+      padding: 2px 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+      padding: 19px;
+      color: white;
+    }
+    
+    #menu, a {
+      color: rgb(255, 255, 255);
+    }
+    #menu, a:hover{
+      color:rgb(255, 255, 255);
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #2C2C2C;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-brown bg-brown">
+      <a class="navbar-brand" href="https://www.instagram.com/cafe4marcas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <img src="logo/logo2.jpg" style="border-radius: 100%;" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a> <a style="list-style: none; color: #ffffff;" href="https://www.instagram.com/cafe4marcas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">C & F CAFETERIA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" id="menu">
+          <a class="nav-item nav-link active" href="https://www.youtube.com/watch?v=zmiK2fZQ4dU&pp=ygUfQ2FmZXMgZSBzZXVzIHRpcG9zIGUgYmVuZWZpY2lvcw%3D%3D" > Cardápio de Cafés <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=oh5SlCc-O-o&pp=ygUacmVjZWl0YXMgZGUgc3Vjb3MgbmF0dXJhaXM%3D">Opções de Bebidas</a>
+          <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=7vBbpvRUzVI&list=PLSy30x5uj1-dP9ATBdnS0Sg19UuS9g9NG&pp=iAQB">Salgados</a>
+          <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=LBTg67TUHcs&list=PLSy30x5uj1-fRyt7GQP0CyhNSQPLAydgg&pp=iAQB">Doces</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active"  style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/pexels-jayoke-851555.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item" style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/cfbolo.jpg" alt="Second slide ">
+      </div>
+      <div class="carousel-item" style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/pexels-chevanon-302899.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item" style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/sucosacecarousel.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item" style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/sucosabacarousel co.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item" style="height: 580px;">
+        <img class="d-block w-100 img-fluid" src="carousel/sucoscarousel cos.jpg" alt="Third slide">
+      </div>
+    </div>
+                          <!--SETAS-->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<section class="overview" style="background-color: brown">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center mb-4">
+        <h2 style="margin-bottom: 25px; margin-top: 25px; color: #fff;" >Cardápio de Cafés</h2>
+      </div>
+                                          <!--Café 1-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%;border-radius: 9px; ">
+          <img src="Cafes/I Love Coffee  - Descubra os benefícios do café.jpg " style="height: 300px ; border-radius: 9px;" class="card-img-top" alt="CafeTradicional">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px;"><b>Café Tradicional</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+            
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00</p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>
+                
+              </div>
+            </div>
+                        
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+              </button>
+              </div>
+            </p>
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">
+              Mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Opções de Acompanhamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ol style="text-align: start; list-style: none;"> 
+                      <li>Banana Frita</li>
+                      <li>Cacetinho</li>
+                      <li>Cokkies</li>
+                      <li>Misto Quente</li>
+                      <li>Macaxeira Frita</li>
+                      <li>Pão com Manteiga</li>
+                      <li>Pão de Queijo</li>
+                      <li>Pão de Queijo Recheado</li>
+                      <li>Pupunha Cozida</li>
+                      <li>Pão Doce com Cobertura de Coco</li>
+                      <li>Pão Francês com Recheio de Goiaba</li>
+                      <li>Tapioca Recheada</li>
+                      <li>Torrada</li>
+                      <li>Tucumã com Farinha</li>
+                    </ol>
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                      </ol>
+                      
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 img-fluid" src="carousel3/tucuma.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item" >
+                          <img class="d-block w-100 img-fluid" src="carousel3/tapioca.jpg" alt="Second slide ">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 img-fluid" src="carousel3/frita.jpg" alt="Third slide">
+                        </div>
+                        
+                      </div>
+                                            <!--SETAS-->
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                                            <!--Café 2-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Cafes/pexels-ryutaro-6249388.jpg" style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CafeCappuccino">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px;"><b>Cappuccino</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>
+              </div>
+            </div>
+            <p>
+              <!--Botão para abrir as opções em ML-->
+              <div>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                  </svg>
+                </button>
+                </div>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+                                            <!--Café 3-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Cafes/cf.jpg" style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CafeExtraforte">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px; "><b>Café Extraforte</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+           
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>              
+              </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+               
+              </button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+                                            <!--Café 4-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Cafes/pexels-valeriya-21558657.jpg"  style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CaféGourmet">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px; "><b>Café Gourmet</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+          
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+                
+              </button>
+              </div>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="overview" style="background-color:brown;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center mb-4">
+        <h2 style="margin-bottom: 25px; margin-top: 25px; color: rgb(255, 255, 255);">Cardápio de Bebidas</h2>
+      </div>
+                                          <!--Café 1-->
+                                          <div class="col-md-3 text-center mb-4">
+                                            <div class="card" style="width: 100%; border-radius: 9px;">
+                                              <img src="Sucos/laranja.jpg" style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CafeCappuccino">
+                                              <div class="card-body">
+                                                <p class="card-text" style="font-size: 14px;"><b>Laranja</b></p>
+                                                <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+                                                <div class="collapse" id="collapseExample">
+                                                  <div class="card card-body">
+                                                    <p> Copo 150ml R$ 6,00 </p>
+                                                    <p> Copo 200ml R$ 8,00</p>
+                                                    <p> Copo 250ml R$ 10,00</p>
+                                                    <p> Copo 300ml R$ 12,00</p>
+                                                    <p> Copo 350ml R$ 14,00</p>
+                                                    <p> Copo 400ml R$ 16,00</p>
+                                                    <p> Copo 450ml R$ 18,00</p>
+                                                    <p> Copo 500ml R$ 20,00 </p>
+                                                  </div>
+                                                </div>
+                                                <p>
+                                                  <!--Botão para abrir as opções em ML-->
+                                                  <div>
+                                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                                                      </svg>
+                                                    </button>
+                                                    </div>
+                                                </p>
+                                    <!-- Botão para acionar modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
+                                      ADICIONAIS
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Opções </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                      <div class="modal-body">
+                    <ol style="list-style-type: none; text-align: start;">
+                      <li>Suco  Tradicional</li>
+                      <li>Suco  Batido Com Hortelã</li>
+                      <li>Suco  Com Leite</li>
+                      <li>Suco  Sem Leite</li>
+                      <li>Suco  Tradicional sem Açucar</li>
+                      <li>Suco  Tradicional com Açucar</li>
+                    </ol>
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                      </ol>
+                      
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 img-fluid" src="carousel4/crlaranja.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item" >
+                          <img class="d-block w-100 img-fluid" src="carousel4/crabx.jpg" alt="Second slide ">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 img-fluid" src="carousel4/cracerola.jpg" alt="Third slide">
+                        </div>
+                        
+                      </div>
+                                            <!--SETAS-->
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                            <!--Café 2-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Sucos/abacaxi.jpg" style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CafeCappuccino">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px;"><b>Abacaxi</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>
+              </div>
+            </div>
+            <p>
+              <!--Botão para abrir as opções em ML-->
+              <div>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                  </svg>
+                </button>
+                </div>
+            </p>
+    </div>
+  </div>
+</div>
+                                            
+      
+                                      <!--Café 3-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Sucos/maçã.jpg" style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CafeExtraforte">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px; "><b>Maçã</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+           
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>            
+              </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+               
+              </button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+                                            <!--Café 4-->
+      <div class="col-md-3 text-center mb-4">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Sucos/sucoacerola.jpg"  style="height: 300px; border-radius: 9px;" class="card-img-top" alt="CaféGourmet">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 14px; "><b>Acerola</b></p>
+            <p class="card-text" style="font-size: 12px; text-align: start;"></p>
+          
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p> Copo 150ml R$ 6,00 </p>
+                <p> Copo 200ml R$ 8,00</p>
+                <p> Copo 250ml R$ 10,00</p>
+                <p> Copo 300ml R$ 12,00</p>
+                <p> Copo 350ml R$ 14,00</p>
+                <p> Copo 400ml R$ 16,00</p>
+                <p> Copo 450ml R$ 18,00</p>
+                <p> Copo 500ml R$ 20,00 </p>             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg> 
+              </button>
+              </div>
+            </p>
+                    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                            <!--Salgados-->
+
+
+
+
+
+
+
+  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators2" data-slide-to="3" class="active"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner" style="margin: auto;">
+      <div class="carousel-item active">
+        <img class="d-block w-100 img-fluid" src="carousel2/pexels-enginakyurt-2271110.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" src="carousel2/pexels-leonardo-luz-338722550-13998635.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 img-fluid " src="carousel2/pexels-valeriya-568805.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<section class="overview" style="background-color: brown;">
+  <div class="container" style="display: block;">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center mb-4">
+        <h2 style="margin-bottom: 15px; margin-top: 25px; color: rgb(255, 255, 255)">Opções de Salgados</h2>
+  </div>
+</section>
+       
+<section class="overview" style="background-color: brown;">
+    <div class="container">
+    <div class="row">
+      <!--Card do Risoles-->
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Salgados/Risoles de Carne e Queijo.jpg" class="card-img-top" alt="Risoles" style="height: 400px; border-radius: 9px;">
+          <div class="card-body">
+            <p class="card-text"><b>Risoles</b></p>
+            <p class="card-text"> </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Carne R$ 10  </p>
+                <p>Frango R$ 10 </p>
+                <p>Misto R$ 10 </p>
+                <p>Queijo R$ 10 </p>
+                <p>Presunto R$ 10 </p>
+                <p>Frango com Catupiry R$ 10 </p>            
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>  
+              </button>
+              </div>
+            </p>
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3">
+  SABORES
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opções de Sabores</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol style="text-align: start; list-style: none;"> 
+          <li>Carne de Sol</li>
+          <li>Calabresa com Bacon</li>
+          <li>Frango</li>
+          <li>Frango com Catupiry</li>
+          <li>Misto</li>
+          
+        </ol>
+        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+          </ol>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid" src="carousel5/pastel.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item" >
+              <img class="d-block w-100 img-fluid" src="carousel5/joeio.jpg" alt="Second slide ">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="carousel5/pqueijo.jpg" alt="Third slide">
+            </div>
+            
+          </div>
+                                <!--SETAS-->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+      </div>
+    </div>
+  </div>
+</div>          </div>
+        </div>
+      </div>
+        <!--Card do Pastel de Carne-->
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 9px;">
+          <img src="Salgados/pastel.jpg" class="card-img-top" alt="Pastel de Carne" style="height: 400px; border-radius: 9px;">
+          <div class="card-body">
+            <p class="card-text"><b>Pastel</b></p>
+            <p class="card-text"></p>
+            
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Carne R$ 10 </p>
+                <p>Frango R$ 10 </p>
+                <p>Misto R$ 10 </p>
+                <p>Queijo Guoda R$ 10 </p>
+                <p>Presunto R$ 10 </p>
+                <p>Calabresa com Bacon R$ 10 </p>            
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+              
+              </button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+       <!--Card do Pao de Queijo-->
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 9px">
+          <img src="Salgados/paodequeijo.jpg" class="card-img-top" alt="Pão de Queijo" style="height: 400px; border-radius: 9px;">
+          <div class="card-body">
+            <p class="card-text"><b>Pão de Queijo</b></p>
+            <p class="card-text"></p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Carne R$ 10 </p>
+                <p>Frango R$ 10 </p>
+                <p>Misto R$ 10 </p>
+                <p>Queijo Guoda R$ 10 </p>
+                <p>Presunto R$ 10 </p>
+                <p>Calabresa com Bacon R$ 10 </p>             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>      
+              </button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Card da Saltenha-->
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 10px">
+          <img src="Salgados/saltenha.jpg" class="card-img-top" alt="Saltenhas Fritas e Assadas" style="height: 400px; border-radius: 9px;">
+          <div class="card-body">
+            <p class="card-text"><b>Saltenhas</b></p>
+            <p class="card-text"></p>
+            
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Carne R$ 10 </p>
+                <p>Frango R$ 10 </p>
+                <p>Misto R$ 10 </p>
+                <p>Queijo R$ 10 </p>
+                <p>Presunto R$ 10 </p>
+                <p>Frango com Catupiry R$ 10 </p>
+                            
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+              </button>
+              </div>
+            </p>
+         </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+                          <!--Doces-->
+<section class="overview" style="background-color: brown; border-radius: 10px">
+  <div class="container" style="display:block ;" >
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center mb-4">
+        <h2 style="margin-bottom: 15px; margin-top: 25px; color: #ffffff;">Doces</h2>
+  </div>
+</section>
+
+<section class="overview" style="background-color: brown;">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; height: 300; border-radius: 10px">
+          <img src="Doces/torta.jpg" class="card-img-top" alt="Tortas" style="height: 400px; border-radius: 9px;">
+          <div class="card-body">
+            <p class="card-text"><b>Tortas</b></p>
+            <p class="card-text"></p>
+
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Torta de Frango R$ 10 </p>
+                <p>Torta de Carne R$ 12 </p>
+                <p>Torta de Calabresa R$ 14  </p>
+                <p>Torta de Palmito R$ 16 </p>
+                <p>Torta de Morango R$ 18 </p>
+                <p>Torta de Chocolate R$ 20 </p>             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+              </button>
+              </div>
+            </p>
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo4">
+  ADICIONAIS
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opções de Cobertura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol style="text-align: start; list-style: none;"> 
+          <li>Cobertura de Chocolate com Recheio de Ninho</li>
+          <li>Cobertura de Morango com Recheio de Avelã</li>
+          <li>Cobertura de Mousse de Maracujá sem Recheio</li>
+          <li>Cobertura de Mousse de Cupuaçu sem Recheio </li>
+          <li>Cobertura de Limão com Rapas da casca de Limão</li>
+          
+        </ol>
+        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+          </ol>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid" src="carousel6/chocolate.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item" >
+              <img class="d-block w-100 img-fluid" src="carousel6/limao.jpg" alt="Second slide ">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="carousel6/morango.jpg" alt="Third slide">
+            </div>
+            
+          </div>
+                                <!--SETAS-->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 10px">
+          <img src="Doces/bolo.jpg" class="card-img-top" alt="Bolos Confeitados" style="height: 400px; border-radius: 10px">
+          <div class="card-body">
+            <p class="card-text"><b>Bolos Confeitados</b></p>
+            <p class="card-text"></p>
+          
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Bolo de Frutas R$ 30 </p>
+                <p>Bolo de Morango R$ 40 </p>
+                <p>Bolo de Limão R$  50</p>
+                <p>Bolo de Chocolate R$ 60 </p>
+                <p>Bolo de Coco R$ 60 </p>
+                <p>Bolo Leite Ninho R$ 80 </p>
+                             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+              </button>
+              </div>
+            </p>
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo4">
+  ADICIONAIS
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opções de Cobertura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol style="text-align: start; list-style: none;"> 
+          <li>Cobertura de Chocolate com Recheio de Ninho</li>
+          <li>Cobertura de Morango com Recheio de Avelã</li>
+          <li>Cobertura de Mousse de Maracujá sem Recheio</li>
+          <li>Cobertura de Mousse de Cupuaçu sem Recheio </li>
+          <li>Cobertura de Limão com Rapas da casca de Limão</li>
+          
+        </ol>
+        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+          </ol>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid" src="carousel6/chocolate.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item" >
+              <img class="d-block w-100 img-fluid" src="carousel6/limao.jpg" alt="Second slide ">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="carousel6/morango.jpg" alt="Third slide">
+            </div>
+            
+          </div>
+                                <!--SETAS-->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>           
+</div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 10px">
+          <img src="Doces/donuts2.jpg" class="card-img-top" alt="Donuts" style="height: 400px; border-radius: 10px">
+          <div class="card-body">
+            <p class="card-text"><b>Donuts</b></p>
+            <p class="card-text"></p>
+            
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Chocolate R$ 8,00 </p>
+                <p>Beijinho R$ 8,00 </p>
+                <p>Doce de leite R$ 8,00</p>
+                <p>Morango R$ 8,00</p>
+                <p>Homer R$ 8,00</p>
+                <p>Creme de Avela R$ 8,00</p>             
+               </div>
+            </div>
+            <p>
+              <div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+             
+              </button>
+              </div>
+            </p>
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo10">
+  ADICIONAIS
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opções de Cobertura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol style="text-align: start; list-style: none;"> 
+          <li>Cobertura de Chocolate com Recheio de Ninho</li>
+          <li>Cobertura de Morango com Recheio de Avelã</li>
+          <li>Cobertura de Mousse de Maracujá sem Recheio</li>
+          <li>Cobertura de Mousse de Cupuaçu sem Recheio </li>
+          <li>Cobertura de Limão com Rapas da casca de Limão</li>
+          
+        </ol>
+        <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+          </ol>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid" src="cr7/donus (1).jpg" alt="First slide">
+            </div>
+            <div class="carousel-item" >
+              <img class="d-block w-100 img-fluid" src="cr7/donus (2).jpg" alt="Second slide ">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="cr7/donus (3).jpg" alt="Third slide">
+            </div>
+            
+          </div>
+                                <!--SETAS-->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>           </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="card" style="width: 100%; border-radius: 10px">
+          <img src="Doces/brigaderios.jpg" class="card-img-top" alt="Brigadeiros" style="height: 400px; border-radius: 10px">
+          <div class="card-body">
+            <p class="card-text"><b>Brigadeiros Gourmet</b></p>
+            <p class="card-text"></p>
+            
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <p>Café R$  8,00 </p>
+                <p>Cereja R$ 8 </p>
+                <p>Paglia Italiana R$ 8,00 </p>
+                <p>Coco R$ 8,00 </p> 
+                <p>Damasco R$ 8,00 </p>  
+                <p>Romeu e Julieta R$ 8,00 </p>               
+               </div>
+            </div>
+            <p>
+              <div>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                  </svg>
+                 <!--Colocar um circulo pequeno e um seta ao meio -->
+                </button>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 text-center">
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<section style="background-color: #000000; color: #fff; padding-top: 100px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h5 style="font-size: 15px;">NOSSOS CONTATOS</h5>
+        <ul class="list-unstyled" style="font-size: 14px;">
+          <li>CONTATO PARA TIRAR DÚVIDAS</li>
+          <li>TEL: +55 699999-9999</li>
+          <li>Email: c&fcafeteria@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5 style="font-size: 15px;">COMPANY INFO</h5>
+        <ul class="list-unstyled" style="font-size: 14px;">
+          <li><a href="#" style="color: white;">SOBRE NÓS</a></li>
+          <li><a href="#" style="color: white;">POLITÍCA E PRIVACIDADE</a></li>
+          <li><a href="#" style="color: white;">TERMOS DE USO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>    
+</section>
+  
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center"> <!-- Adiciona coluna Bootstrap -->
+        <p>&copy; 2024 Cafeteria. Todos os Direitos Reservados.</p>
+      </div>
+      <div class="col-md-3 text-center"> <!-- Adiciona coluna Bootstrap -->
+        <img src="https://img.terabyteshop.com.br/cartoes/fpr_mercadopago.png" alt="Mercado Pago" class="img-fluid"> 
+        <a style="color: white; list-style: none;" href="https://www.instagram.com/cafe4marcas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <!-- Adiciona classe img-fluid para tornar a imagem responsiva -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+      </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
